@@ -8,6 +8,7 @@ const mime = {
   'ico': 'image/x-icon',
   'mp3': 'audio/mpeg3',
   'mp4': 'video/mp4'
+
 }
 
 const servidor = http.createServer((pedido, respuesta) => {
