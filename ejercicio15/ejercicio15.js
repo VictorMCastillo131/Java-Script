@@ -2,6 +2,7 @@ const http = require('node:http')
 const fs = require('node:fs')
 const mime = require('mime')
 
+
 const servidor = http.createServer((pedido, respuesta) => {
   const url = new URL('http://localhost:8888' + pedido.url)
   let camino = 'static' + url.pathname
