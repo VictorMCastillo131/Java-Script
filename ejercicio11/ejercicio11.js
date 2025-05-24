@@ -13,7 +13,7 @@ const mime = {
 const cache = {}
 
 const servidor = http.createServer((pedido, respuesta) => {
-  const url = new URL('http://localhost:8888' + pedido.url)
+  const url = new URL('http://localhost:8888' + pedido.url) //url del servidor
   let camino = 'static' + url.pathname
   if (camino == 'static/')
     camino = 'static/index.html'
